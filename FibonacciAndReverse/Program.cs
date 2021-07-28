@@ -26,7 +26,9 @@ namespace FibonacciAndReverse
         {
             string text = "\n row 1\n row 2\n row 3\n row 4\n row 5\n row 6\n row 7\n row 8\n row 9\n row 10\n";
 
-            string path = @"D:\source";
+            //string path = @"D:\source";
+            Console.WriteLine("Выберите пожалуйста путь где хотите, чтобы был создан файл: \n 1 - D:/source \n 2 - C:/source");
+            string path = Convert.ToString(Console.ReadLine());
             DirectoryInfo dirInfo = new DirectoryInfo(path);
             if (!dirInfo.Exists)
             {
